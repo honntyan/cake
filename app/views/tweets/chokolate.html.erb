@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="./stylesheets/chokolate.css">
+  </head>
+  <body>
+     <div class="event">
+        <%= image_tag 'chokolate.jpg', class: 'chokolate' %>
+</div>
+
+  <div class="about-container">
+      <p class="info-text">
+      <span class="font-small">
+      <%= form_for @tweet do |f| %>
+
+    <h1>チョコレート</h1>
+    <br>
+    <h2>オススメポイント！</h2>
+    <br>
+    <h3> <p>甘い物が食べたいときに！</P>
+    <p>集中したいときに！</P>
+    <p>牛乳に溶かしてホットチョコレートに！</P>
+    <p>気分転換に！</P>
+    </h3>
+    <br>
+    <h2> 材料 24枚分</h2>
+    <br>
+    <h3><p>チョコレート 5枚</P>
+        <p> 生クリーム 100cc</P>
+        <P>ココア 適量 </P>
+        
+      </div>  
+    </h3>  
+    </span>
+
+    <p><h2><%= link_to "レシピはこちら", "https://oceans-nadia.com/recipe_list/5144", target: "_blank", rel: "noopener" %></P></h2>
+
+
+<p><h2><%= link_to "一覧に戻る", tweets_path %></p></h2>
+
+
+
+  </header>
+   </body>
+</html>
+<% end %>
+

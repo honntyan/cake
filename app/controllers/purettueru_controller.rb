@@ -1,0 +1,2 @@
+class PurettueruController < ApplicationController
+end

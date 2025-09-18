@@ -1,0 +1,2 @@
+class PotetoController < ApplicationController
+end

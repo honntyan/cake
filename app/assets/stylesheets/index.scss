@@ -1,0 +1,36 @@
+#first-block {
+
+  background-size: cover;
+  width: 120%;
+  
+   background-image: url("../images/candy.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  text-align: center;
+}
+
+
+/*   First block End   */
+#second-brock{
+
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  text-align: center;
+}

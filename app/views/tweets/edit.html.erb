@@ -1,0 +1,25 @@
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :お菓子の名前 %>
+    <%= f.text_field :name, :size => 30 %>
+  </div>
+
+
+<p>  <div class="field">
+    <%= f.label :かかった時間  %>
+    <%= f.select :time, 
+    [["30", "40"], 
+    ["50", "90"], 
+    ["120", "それ以上"]], include_blank: "選択して下さい" %>
+  </div></P>
+
+
+  <p><div class="field">
+    <%= f.label :感想 %>
+    <%= f.text_field :comment, :size => 30 %>
+  </div></P>
+
+  <%= f.submit "再投稿する" %>
+<% end %>
+
+<%= link_to "一覧に戻る", tweets_path %>

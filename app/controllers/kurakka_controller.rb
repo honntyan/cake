@@ -1,0 +1,2 @@
+class KurakkaController < ApplicationController
+end

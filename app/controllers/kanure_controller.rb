@@ -1,0 +1,2 @@
+class KanureController < ApplicationController
+end

@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="./stylesheets/chokolate.css">
+  </head>
+  <body>
+     <div class="event">
+        <%= image_tag 'cokkie.jpg', class: 'cokkie' %>
+</div>
+
+  <div class="about-container">
+      <p class="info-text">
+      <span class="font-small">
+<%= form_for @tweet do |f| %>
+
+    <h1>クッキー</h1>
+    <h2>こんなあなたにオススメ！</h2>
+    <h3> <p>手軽に食べたい！</P>
+    <p>サクサク食感！</P>
+    <p>頑張りたいときに！</P>
+    <p>がっつり食べたいときに！</P>
+  </h3>
+    <br>
+    <h2> 材料 44枚分</h2>
+    <br>
+    <h3><p>薄力粉 200g</P>
+        <p>バター 100g</P>
+        <P>砂糖 60-70g</P>
+        <p>溶き卵 1/2個分</P>
+        
+     </div>  
+    </h3>  
+    </span>  
+    </header>
+   </body>
+</html>
+<% end %>
+
+<p><%= link_to "レシピはこちら", "https://macaro-ni.jp/75904", target: "_blank", rel: "noopener" %></P>
+
+<%= link_to "一覧に戻る", tweets_path %>

@@ -1,0 +1,2 @@
+module CokkieHelper
+end

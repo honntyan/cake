@@ -1,0 +1,47 @@
+/*   Second block   */
+#second-block {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-title {
+  font-size: 60px;
+  font-family: serif;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: left;
+}
+
+.info-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #444;
+
+  width: 30%;
+}
+
+.appulpai {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+img {
+  max-width: 70%; /* 親要素の幅に合わせて縮小 */
+  height: auto;    /* 縦横比を維持 */
+}
+
+/*   second block End   */
+

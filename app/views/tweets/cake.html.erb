@@ -1,0 +1,44 @@
+<%= form_for @tweet do |f| %>
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+
+
+      <link rel="stylesheet" href="./stylesheets/cake.css">
+  </head>
+  <body>
+ <header class="header-nav">
+<nav><a href="#first-block"></a></nav>
+ </header>
+ <div class="event">
+        <%= image_tag 'cake.jpg', class: 'cake' %>
+</div>
+    <h1>ケーキ</h1>
+    <h2>オススメポイント！</h2>
+    <h3> <p>甘いものが食べたいときに！</P>
+    <p>リラックスしたいときに！</p>
+    <p>紅茶などと一緒に！</P>
+    <p> 気分転換に！</p>
+    </h3>
+    <br>
+    <h2> 材料 </h2>
+    <br>
+    <h3><p>イチゴ 1パック</P>
+        <p>卵 3個</P>
+        <P>ホットケーキミックス 150g</P>
+        <p>サラダ油 大さじ2</P>
+        <P>生クリーム 300g</P>
+        <P>砂糖 20g</P>
+        <p>水 50cc</P>
+        <P>砂糖 30g</P>       
+    </h3>  
+<% end %>
+</body>
+</html>
+
+<p><%= link_to "レシピはこちら", "https://delishkitchen.tv/recipes/187021367042900372" ,target: "_blank", rel: "noopener" %></P>
+
+
+<%= link_to "一覧に戻る", tweets_path %>

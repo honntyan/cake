@@ -1,0 +1,2 @@
+class ImomotiController < ApplicationController
+end

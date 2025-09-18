@@ -1,0 +1,2 @@
+module KanureHelper
+end

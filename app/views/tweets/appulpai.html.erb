@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="./stylesheets/applupai.css">
+  </head>
+  <body>
+     <div class="event">
+      <%= image_tag 'applpai.jpg', class: 'applupai' %>
+</div>
+  <div class="about-container">
+      <p class="info-text">
+      <span class="font-small">
+
+<%= form_for @tweet do |f| %>
+
+    <h1>アップルパイ</h1>
+    <h2>こんなあなたにオススメ！</h2>
+    <h3> <p>甘い物が食べたい！</P>
+    <p> がっつりたべたい</P>
+    <p>気分転換をしたい</P>
+    <p>パイのサクサク食感</P>
+  </h3>
+    <br>
+    <h2> 材料 8個分</h2>
+    <br>
+    <h3><p>パイシート 8枚</P>
+        <p>リンゴ 2個</P>
+        <P>砂糖 50g</P>
+        <p>バター 20g</P>
+        <P>溶き卵 適量</P>
+        <P>薄力粉 適量</P>      
+    </div>  
+    </h3>  
+    </span>
+</header>
+   </body>
+</html>
+<% end %>
+
+<p><%= link_to "レシピはこちら","https://delishkitchen.tv/recipes/177911714413544575", target: "_blank", rel: "noopener" %></P>
+
+
+<%= link_to "一覧に戻る", tweets_path %>

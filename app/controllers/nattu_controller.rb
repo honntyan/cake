@@ -1,0 +1,2 @@
+class NattuController < ApplicationController
+end

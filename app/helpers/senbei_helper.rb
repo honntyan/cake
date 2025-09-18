@@ -1,0 +1,2 @@
+module SenbeiHelper
+end

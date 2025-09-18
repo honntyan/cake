@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="./stylesheets/chokolate.css">
+  </head>
+  <body>
+     <div class="event">
+        <%= image_tag 'potetotip.jpg', class: 'potetotip' %>
+</div>
+
+  <div class="about-container">
+      <p class="info-text">
+      <span class="font-small">
+<%= form_for @tweet do |f| %>
+
+    <h1>ポテトチップ</h1>
+    <br>
+    <h2>オススメポイント！</h2>
+    <br>
+    <h3> <p>がっつりたべたい！</P>
+    <p>しょっぱいものが食べたいときに！</P>
+    <p>友だちといっしょに</P>
+    <p>サクサク食感！</P>
+    </h3>
+    <br>
+    <h2> 材料 2人分</h2>
+    <br>
+    <h3><p>ジャガイモ(100g) 1個</P>
+        <p>水 300ml</P>
+        <P>塩 小さじ1/2</P>
+        <p>油 適量 </P>
+        <p>塩（最後にかける用） ふたつまみ</P>
+        <p>チャービル 適量</P>
+    
+      </div>  
+    </h3>  
+    </span>
+
+  </header>
+   </body>
+</html>
+<% end %>
+
+<p><%= link_to "レシピはこちら", "https://www.kurashiru.com/recipes/e9a5a14d-0754-4202-9d80-2dc9f90d9d08", target: "_blank", rel: "noopener" %></P>
+
+
+<%= link_to "一覧に戻る", tweets_path %>

@@ -1,0 +1,2 @@
+class SenbeiController < ApplicationController
+end
