@@ -71,17 +71,9 @@
 <% @tweets.each do |tweet| %>
   <p><%= tweet.content %></p>
   
-  <% if user_signed_in? %>
-    <%= button_to (tweet.liked_users.include?(current_user) ? "♥ いいね済み" : "♡ いいね"), 
-                  like_tweet_path(tweet), method: :post %>
-  <% else %>
-    <p>ログインするといいねできます</p>
-  <% end %>
+  
 
-  <p>いいね数: <%= tweet.likes.count %></p>
-<% end %>
 
-</div>
 </div>
   </section>
   <!--   Third block End   -->

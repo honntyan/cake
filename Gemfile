@@ -35,5 +35,7 @@ end
 
 # PostgreSQL → 本番用
 group :production do
-  gem 'pg'
+
 end
+
+  gem 'pg'
