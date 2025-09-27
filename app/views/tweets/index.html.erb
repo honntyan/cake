@@ -1,84 +1,73 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <titleお菓子home</title>
+    <title>お菓子home</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/index.scss">
+  </head>
 <body>
   <header>
   </header>
   <!--   First block Start   -->
   <section id="first-block">
     <div class="title-container">
-<h3>お菓子の種類一覧ページ</h3>
+      <h3>お菓子の種類一覧ページ</h3>
 
-<h2><p><%= link_to "チョコレート", chokolate_tweets_path %></p></h2>
-<h2><p><%= link_to "クッキー", kokkie_tweets_path %></p></h2>
-<h2><p><%= link_to "いももち", imomoti_tweets_path %></P><h2>
-<h2><p><%= link_to "ケーキ",cake_tweets_path %></p></h2>
-<h2><p><%= link_to "ポテトチップ",potetotip_tweets_path %></p></h2>
-<h2><p><%= link_to "アップルパイ",appulpai_tweets_path %></p></h2>
-<h2><p><%= link_to "和菓子",wagasi_tweets_path %></p>
-<p><%= link_to "カヌレ",kanure_tweets_path %></p>
-<p><%= link_to "クラッカー",kurakka_tweets_path %></p>
-<p><%= link_to "マカロン",makaron_tweets_path %></p>
-<p><%= link_to "ナッツ",nattu_tweets_path %></p>
-<p><%= link_to "おかき",okaki_tweets_path %></p>
-<p><%= link_to "のり塩ポテト",poteto_tweets_path %></p>
-<p><%= link_to "プレッツェル",purettueru_tweets_path %></p>
-<p><%= link_to "せんべい",senbei_tweets_path %></p>
-<p><%= link_to "ゼリー",zeri_tweets_path %></p>
-
-
-
-
-
-
-
-
-
-</div>
-</section>
+      <h2><p><%= link_to "チョコレート", chokolate_tweets_path %></p></h2>
+      <h2><p><%= link_to "クッキー", kokkie_tweets_path %></p></h2>
+      <h2><p><%= link_to "いももち", imomoti_tweets_path %></p></h2>
+      <h2><p><%= link_to "ケーキ", cake_tweets_path %></p></h2>
+      <h2><p><%= link_to "ポテトチップ", potetotip_tweets_path %></p></h2>
+      <h2><p><%= link_to "アップルパイ", appulpai_tweets_path %></p></h2>
+      <h2><p><%= link_to "和菓子", wagasi_tweets_path %></p></h2>
+      <p><%= link_to "カヌレ", kanure_tweets_path %></p>
+      <p><%= link_to "クラッカー", kurakka_tweets_path %></p>
+      <p><%= link_to "マカロン", makaron_tweets_path %></p>
+      <p><%= link_to "ナッツ", nattu_tweets_path %></p>
+      <p><%= link_to "おかき", okaki_tweets_path %></p>
+      <p><%= link_to "のり塩ポテト", poteto_tweets_path %></p>
+      <p><%= link_to "プレッツェル", purettueru_tweets_path %></p>
+      <p><%= link_to "せんべい", senbei_tweets_path %></p>
+      <p><%= link_to "ゼリー", zeri_tweets_path %></p>
+    </div>
+  </section>
   
- <section id="second-block">
- <div class="about-container">
+  <section id="second-block">
+    <div class="about-container">
       <p class="info-text">
-<p><%= link_to "お菓子診断はこちら", perfumes_path %></p>
-  </div>
+        <%= link_to "お菓子診断はこちら", perfumes_path %>
+      </p>
+    </div>
   </section>
   <!--   Second block End   -->
 
-
-  
-<!--   Third block Start   -->
+  <!--   Third block Start   -->
   <section id="third-block">
-  <div class="event-container">
+    <div class="event-container">
       <div class="event">
-        <image src="images/event1.jpg" class="event-image">
+        <img src="images/event1.jpg" class="event-image">
         
-  <% @tweets.each do |t| %>
-    <div class="tweet">
-      <p><strong><%= t.name %></strong> - <%= t.time %></p>
-      <p><%= t.comment %></p>
+        <% @tweets.each do |t| %>
+          <div class="tweet">
+            <p><strong><%= t.name %></strong> - <%= t.time %></p>
+            <p><%= t.comment %></p>
 
-      <%= link_to "編集する", edit_tweet_path(t.id) %>
-      <%= button_to "削除する", tweet_path(t.id), method: :delete %>
+            <%= link_to "編集する", edit_tweet_path(t.id) %>
+            <%= button_to "削除する", tweet_path(t.id), method: :delete %>
+          </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
-</div>
 
-<h1>ツイート一覧</h1>
+    <h1>ツイート一覧</h1>
 
-<% @tweets.each do |tweet| %>
-  <p><%= tweet.content %></p>
-  
-  
-
-
-</div>
+    <% @tweets.each do |tweet| %>
+      <p><%= tweet.content %></p>
+    <% end %>   <!-- ←ここを追加 -->
+    
   </section>
   <!--   Third block End   -->
-<!--  コンテンツはここまで  -->
 
   <footer>	
   </footer>
-</body>  
+</body>
+</html>
